@@ -1,0 +1,10 @@
+*.swp
+node_modules
+ignore-img
+dist
+*.tgz
+npm-debug.log
+*.obj
+*.tif
+*.mtl
+package-lock.json
