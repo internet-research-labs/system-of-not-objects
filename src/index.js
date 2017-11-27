@@ -1,3 +1,5 @@
+import {lsystem} from './l-system.js';
+
 export class Whatever {
 
   /**
@@ -24,28 +26,4 @@ export class Whatever {
   }
 }
 
-
-export function recurLSystem(state, production, iteration) {
-  if (iteration == 0) {
-    return state;
-  }
-
-  let result = "";
-
-  state.split('').forEach(ch => {
-    let val = production[ch];
-    result += val != undefined ? val : ch;
-  });
-
-  return recurLSystem(result, production, iteration-1);
-}
-
-function lsystem(str) {
-}
-
-function renderPattern(el) {
-
-  console.log(el.width, el.height);
-
-
-}
+export lsystem;
