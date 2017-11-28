@@ -1,4 +1,4 @@
-import {hilbert} from './hilbert-curve.js';
+import {hilbert, Hilbert} from './hilbert-curve.js';
 import {lsystem} from './l-system.js';
 
 export class Whatever {
@@ -28,6 +28,7 @@ export class Whatever {
 }
 
 export {
+  Hilbert,
   hilbert,
   lsystem,
 }

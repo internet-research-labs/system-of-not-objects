@@ -2,11 +2,24 @@
 <html>
   <head>
     <script src="/assets/pattern.bundled.js"></script>
+    <style>
+      body {
+        background-color: #FBF4E0;
+      }
+      canvas {
+        border: solid 0px black;
+      }
+    </style>
   </head>
   <body>
-    <canvas id="we-did-it-fam"></canvas>
+    <canvas width=900 height=900 id="we-did-it-fam"></canvas>
     <script>
-    console.log(svv.hilbert(5));
+
+    var hilbert = new svv.Hilbert(document.getElementById("we-did-it-fam"), 7);
+    hilbert.setup();
+    hilbert.draw();
+
+
     </script>
   </body>
 </html>
