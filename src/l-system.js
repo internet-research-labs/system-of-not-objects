@@ -10,5 +10,5 @@ export function lsystem(state, production, iteration) {
     result += val != undefined ? val : ch;
   });
 
-  return recurLSystem(result, production, iteration-1);
+  return lsystem(result, production, iteration-1);
 }
