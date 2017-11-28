@@ -5,6 +5,7 @@
     <style>
       body {
         background-color: #FBF4E0;
+        background-color: #EFEFEF;
       }
       canvas {
         border: solid 0px black;
@@ -12,10 +13,10 @@
     </style>
   </head>
   <body>
-    <canvas width=900 height=900 id="we-did-it-fam"></canvas>
+    <canvas width=700 height=700 id="we-did-it-fam"></canvas>
     <script>
 
-    var hilbert = new svv.Hilbert(document.getElementById("we-did-it-fam"), 7);
+    var hilbert = new svv.Hilbert(document.getElementById("we-did-it-fam"), 6);
     hilbert.setup();
     hilbert.draw();
 

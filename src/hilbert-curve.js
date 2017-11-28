@@ -69,11 +69,9 @@ export class Hilbert {
     let w = this.el.width-8;
     let h = this.el.height-8;
 
-    console.log(bounds);
-
     this.context.save();
 
-      this.context.lineWidth = 2;
+      this.context.lineWidth = 3;
       this.context.scale(w/width, h/height);
       this.context.translate(2, 2);
 
@@ -91,7 +89,7 @@ export class Hilbert {
 
   getPoints() {
     let p = [0, 0];
-    let d = [4, 0];
+    let d = [8, 0];
 
     let points = [p];
 
@@ -108,9 +106,12 @@ export class Hilbert {
         d = this.rotateRight(d);
         break;
 
-      default:
+      case 'F':
         p = [p[0]+d[0], p[1]+d[1]];
         points.push(p);
+
+      default:
+        break;
       }
     }
 
